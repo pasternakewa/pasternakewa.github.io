@@ -1,0 +1,81 @@
+@import "./styles/mixins";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  border: black solid;
+}
+
+.header {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  > * {
+    display: inherit;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    border: black solid;
+  }
+}
+
+.intro {
+  width: 100%;
+  background-color: #fffff3;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  padding: 80px 0;
+}
+
+.portfolio {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  > * {
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    border: black solid;
+  }
+}
+
+.portfolio__project--red {
+  @include portfolioProject();
+  background-color: #fff3f5;
+  &:hover {
+    background-color: #ff5c5c;
+    color: white;
+  }
+}
+.portfolio__project--green {
+  @include portfolioProject();
+  background-color: #f1fbf6;
+  &:hover {
+    background-color: #3ef89b;
+    color: white;
+  }
+}
+.portfolio__project--blue {
+  @include portfolioProject();
+  background-color: #ecf1fb;
+  &:hover {
+    background-color: #5389f7;
+    color: white;
+  }
+}
+
+img {
+  width: 90%;
+}
