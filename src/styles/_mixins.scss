@@ -1,0 +1,10 @@
+@mixin portfolioProject {
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  > * {
+    padding-top: 8px;
+  }
+}
