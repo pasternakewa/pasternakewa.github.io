@@ -97,3 +97,28 @@ a {
 a:hover {
   background-color: gray;
 }
+
+.content {
+  min-height: calc(100vh - 120px);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  top: calc(100vh - 100px);
+  width: 100vw;
+  position: sticky;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: space-around;
+}
