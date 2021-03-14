@@ -2,6 +2,7 @@ import "./App.scss";
 import Project from "./Project";
 import github from "./assets/github.jsx";
 import linkedin from "./assets/linkedin";
+import mail from "./assets/mail";
 import birthdayReminder from "./assets/birthday-reminder.png";
 import makeupShowroom from "./assets/makeup-showroom.png";
 import weatherApp from "./assets/weather-app.png";
@@ -33,6 +34,9 @@ function App() {
             href="https://www.linkedin.com/in/pasternakewa/"
           >
             {linkedin}
+          </a>
+          <a id="socials--inkedin" href="mailto:ewapasternak.kontakt@gmail.com">
+            {mail}
           </a>
         </div>
       </div>
