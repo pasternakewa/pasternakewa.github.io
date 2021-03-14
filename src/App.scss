@@ -9,6 +9,7 @@
 
 body {
   height: 100vh;
+  overflow-x: hidden;
   display: flex;
   justify-content: center;
   border: black solid;
@@ -30,16 +31,26 @@ body {
 
 .intro {
   background-color: #fffff3;
-  display: grid;
-  align-content: center;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 80px 0;
   width: 100%;
+  p {
+    margin-bottom: 24px;
+    width: 80%;
+  }
 }
 
 .socials {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 80%;
+  a {
+    margin-right: 32px;
+  }
 }
 
 .portfolio {
