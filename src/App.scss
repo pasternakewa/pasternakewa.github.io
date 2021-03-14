@@ -52,28 +52,23 @@ body {
 }
 
 .portfolio__project--red {
-  @include portfolioProject();
-  background-color: #fff3f5;
-  &:hover {
-    background-color: #ff5c5c;
-    color: white;
-  }
+  @include portfolioProject(#fff3f5, #ff5c5c);
 }
+
+.portfolio__project--orange {
+  @include portfolioProject(#fbf4ec, #f7ab53);
+}
+
 .portfolio__project--green {
-  @include portfolioProject();
-  background-color: #f1fbf6;
-  &:hover {
-    background-color: #3ef89b;
-    color: white;
-  }
+  @include portfolioProject(#f1fbf6, #3ef89b);
 }
+
 .portfolio__project--blue {
-  @include portfolioProject();
-  background-color: #ecf1fb;
-  &:hover {
-    background-color: #5389f7;
-    color: white;
-  }
+  @include portfolioProject(#ecf1fb, #5389f7);
+}
+
+.portfolio__project--yellow {
+  @include portfolioProject(#fbfbec, #f7f453);
 }
 
 img {
