@@ -1,5 +1,18 @@
 import "./App.scss";
-import photo from "./assets/photo.jpg";
+import Project from "./Project";
+import birthdayReminder from "./assets/birthday-reminder.png";
+import makeupShowroom from "./assets/makeup-showroom.png";
+import weatherApp from "./assets/weather-app.png";
+
+const projects = [
+  { src: makeupShowroom, title: "makeup-showroom", backgroundColor: "red" },
+  { src: weatherApp, title: "weather-app", backgroundColor: "orange" },
+  {
+    src: birthdayReminder,
+    title: "birthday-reminder",
+    backgroundColor: "green"
+  }
+];
 
 function App() {
   return (
@@ -10,18 +23,14 @@ function App() {
       </div>
       <div className="intro">Intro</div>
       <div className="portfolio">
-        <div className="portfolio__project--red">
-          <h4 className="portfolio__project__title">title</h4>
-          <img src={photo} alt="project-screenshot"></img>
-        </div>
-        <div className="portfolio__project--green">
-          <h4 className="portfolio__project__title">title</h4>
-          <img src={photo} alt="project-screenshot"></img>
-        </div>
-        <div className="portfolio__project--blue">
-          <h4 className="portfolio__project__title">title</h4>
-          <img src={photo} alt="project-screenshot"></img>
-        </div>
+        {projects.map(({ backgroundColor, src, title }) => (
+          <Project
+            backgroundColor={backgroundColor}
+            key={title}
+            src={src}
+            title={title}
+          />
+        ))}
       </div>
     </div>
   );
