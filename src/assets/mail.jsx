@@ -1,7 +1,7 @@
 export default (
   <svg
     id="Capa_1"
-    enable-background="new 0 0 465.882 465.882"
+    enableBackground="new 0 0 465.882 465.882"
     height="32"
     viewBox="0 0 465.882 465.882"
     width="32"

@@ -1,4 +1,5 @@
 import "./App.scss";
+import About from "./About";
 import Project from "./Project";
 import github from "./assets/github.jsx";
 import linkedin from "./assets/linkedin";
@@ -25,6 +26,7 @@ function App() {
         <h2 className="header__title">Portfolio</h2>
       </div>
       <div className="intro">
+        <About />
         <div className="socials">
           <a id="socials--github" href="https://github.com/pasternakewa">
             {github}
