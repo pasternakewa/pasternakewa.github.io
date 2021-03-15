@@ -37,7 +37,11 @@ function App() {
           >
             {linkedin}
           </a>
-          <a id="socials--inkedin" href="mailto:ewapasternak.kontakt@gmail.com">
+          <a
+            id="socials--inkedin"
+            href="mailto:ewapasternak.kontakt@gmail.com?subject=Lets work together"
+            target="_top"
+          >
             {mail}
           </a>
         </div>

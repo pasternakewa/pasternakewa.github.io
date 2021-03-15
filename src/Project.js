@@ -7,7 +7,7 @@ const Project = ({ backgroundColor, src, title }) => {
 
   return (
     <div className={projectClassName}>
-      <h4 className="portfolio__project__title">{title}</h4>
+      <p className="portfolio__project__title">{title}</p>
       <img src={src} alt="project-screenshot"></img>
       <div className="portfolio__project__buttons">
         <a
