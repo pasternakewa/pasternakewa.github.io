@@ -134,3 +134,22 @@ img {
 .portfolio__project__buttons {
   margin: 16px 0;
 }
+
+.portfolio__project__description {
+  width: 100%;
+}
+
+.portfolio__project__description-list {
+  display: flex;
+  flex-direction: column;
+  height: 160px;
+  align-items: flex-start;
+  font-size: 24px;
+  margin: 32px 40px;
+  font-weight: bold;
+
+  > li {
+    font-weight: normal;
+    line-height: 40px;
+  }
+}
