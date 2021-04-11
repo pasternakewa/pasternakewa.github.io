@@ -13,6 +13,7 @@ body {
   overflow-x: hidden;
   display: flex;
   justify-content: center;
+  background-color: #fffff3;
   border: black solid;
   overflow-x: hidden;
 }
@@ -169,5 +170,16 @@ img {
   }
   .portfolio__project__description {
     margin-bottom: 8px;
+  }
+}
+
+@media (min-width: 667px) {
+  .portfolio {
+    grid-template-columns: 1fr 1fr;
+  }
+  .portfolio__project--green {
+    position: relative;
+    left: -$borderWidth;
+    top: $borderWidth;
   }
 }
