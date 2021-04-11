@@ -1,4 +1,5 @@
 @import "./styles/mixins";
+@import "./styles/library";
 
 *,
 *::after,
@@ -13,6 +14,7 @@ body {
   display: flex;
   justify-content: center;
   border: black solid;
+  overflow-x: hidden;
 }
 
 .header {
@@ -151,5 +153,21 @@ img {
   > li {
     font-weight: normal;
     line-height: 40px;
+  }
+}
+
+@media (max-width: 414px) {
+  .header {
+    grid-template-columns: 2fr;
+    width: calc(100% - (2 * #{$borderWidth}));
+  }
+  .portfolio {
+    grid-template-columns: 3fr;
+    > * {
+      width: calc(100% - (2 * #{$borderWidth}));
+    }
+  }
+  .portfolio__project__description {
+    margin-bottom: 8px;
   }
 }
