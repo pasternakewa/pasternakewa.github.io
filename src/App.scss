@@ -19,6 +19,7 @@ body {
 }
 
 .header {
+  background-color: white;
   display: grid;
   font-size: 24px;
   grid-template-columns: 1fr 1fr;
@@ -79,7 +80,6 @@ body {
 
 .portfolio {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   letter-spacing: 1px;
   width: 100vw;
@@ -181,5 +181,28 @@ img {
     position: relative;
     left: -$borderWidth;
     top: $borderWidth;
+  }
+}
+
+@media (min-width: 1024px) {
+  .portfolio {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .portfolio__project--green {
+    position: unset;
+  }
+}
+
+@media (min-width: 1680px) {
+  body {
+    border: none;
+  }
+  .header {
+    width: 1680px;
+    margin: 0 auto;
+  }
+  .portfolio {
+    width: 1680px;
+    margin: 0 auto;
   }
 }
