@@ -23,7 +23,7 @@ const projects = [
   },
   {
     backgroundColor: "green",
-    description: ["React.js", "Redux", "CSS Flexbox"],
+    description: ["React JS", "Redux", "CSS Flexbox"],
     src: birthdayReminder,
     title: "birthday-reminder"
   }
