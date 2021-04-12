@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.ef79ec75.chunk.css",
-    "main.js": "/static/js/main.a9cbad99.chunk.js",
-    "main.js.map": "/static/js/main.a9cbad99.chunk.js.map",
+    "main.css": "/static/css/main.3a6b9631.chunk.css",
+    "main.js": "/static/js/main.f5e5fee3.chunk.js",
+    "main.js.map": "/static/js/main.f5e5fee3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7d70b1ac.js",
     "runtime-main.js.map": "/static/js/runtime-main.7d70b1ac.js.map",
     "static/js/2.5e150a78.chunk.js": "/static/js/2.5e150a78.chunk.js",
     "static/js/2.5e150a78.chunk.js.map": "/static/js/2.5e150a78.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.ef79ec75.chunk.css.map": "/static/css/main.ef79ec75.chunk.css.map",
+    "static/css/main.3a6b9631.chunk.css.map": "/static/css/main.3a6b9631.chunk.css.map",
     "static/js/2.5e150a78.chunk.js.LICENSE.txt": "/static/js/2.5e150a78.chunk.js.LICENSE.txt",
     "static/media/birthday-reminder.57040778.png": "/static/media/birthday-reminder.57040778.png",
     "static/media/makeup-showroom.f83c85bf.png": "/static/media/makeup-showroom.f83c85bf.png",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.7d70b1ac.js",
     "static/js/2.5e150a78.chunk.js",
-    "static/css/main.ef79ec75.chunk.css",
-    "static/js/main.a9cbad99.chunk.js"
+    "static/css/main.3a6b9631.chunk.css",
+    "static/js/main.f5e5fee3.chunk.js"
   ]
 }
