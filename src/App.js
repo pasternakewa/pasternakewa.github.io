@@ -9,12 +9,23 @@ import makeupShowroom from "./assets/makeup-showroom.png";
 import weatherApp from "./assets/weather-app.png";
 
 const projects = [
-  { src: makeupShowroom, title: "makeup-showroom", backgroundColor: "red" },
-  { src: weatherApp, title: "weather-app", backgroundColor: "orange" },
   {
+    backgroundColor: "red",
+    description: ["React JS", "REST API", "CSS Grid", "Sass, BEM"],
+    src: makeupShowroom,
+    title: "makeup-showroom"
+  },
+  {
+    backgroundColor: "orange",
+    description: ["React JS", "REST API"],
+    src: weatherApp,
+    title: "weather-app"
+  },
+  {
+    backgroundColor: "green",
+    description: ["React JS", "Redux", "CSS Flexbox"],
     src: birthdayReminder,
-    title: "birthday-reminder",
-    backgroundColor: "green"
+    title: "birthday-reminder"
   }
 ];
 
@@ -47,9 +58,10 @@ function App() {
         </div>
       </div>
       <div className="portfolio">
-        {projects.map(({ backgroundColor, src, title }) => (
+        {projects.map(({ backgroundColor, description, src, title }) => (
           <Project
             backgroundColor={backgroundColor}
+            description={description}
             key={title}
             src={src}
             title={title}

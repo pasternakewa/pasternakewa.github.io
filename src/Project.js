@@ -1,6 +1,6 @@
 import React from "react";
 
-const Project = ({ backgroundColor, src, title }) => {
+const Project = ({ backgroundColor, src, title, description }) => {
   const projectClassName = `portfolio__project--${backgroundColor}`;
   const demoUrl = `https://pasternakewa.github.io/${title}`;
   const codeUrl = `https://github.com/pasternakewa/${title}`;
@@ -26,6 +26,14 @@ const Project = ({ backgroundColor, src, title }) => {
         >
           Demo
         </a>
+      </div>
+      <div className="portfolio__project__description">
+        <ul className="portfolio__project__description-list">
+          Made with:
+          {description.map((element) => (
+            <li>{element}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );
