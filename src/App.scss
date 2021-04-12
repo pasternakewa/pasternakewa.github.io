@@ -206,3 +206,13 @@ img {
     margin: 0 auto;
   }
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  height: 100px;
+  top: calc(100vh - 100px);
+  width: 100vw;
+}

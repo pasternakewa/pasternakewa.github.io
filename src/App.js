@@ -68,6 +68,7 @@ function App() {
           />
         ))}
       </div>
+      <footer>&#169; 2021 Ewa Pasternak </footer>
     </div>
   );
 }
